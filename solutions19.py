@@ -1,26 +1,25 @@
-davlatlar = {
-    "o'zbekiston":'toshkent',
-    'aqsh':'washington d.c.',
-    'rossiya':'moskva',
-    'tojikiston':'dushanbe',
-    "qirg'iziston":'bishkek',
-    'qozog\'iston':'nursulton',
-    'malayziya':'kuala-lumpur',
-    'singapur':'sungapur',
-    'italiya':'rim'}
-# user=input("what country do you want to travel: ").lower()
-# if user in davlatlar.keys():
+countries = {
+    "uzbekistan": 'tashkent',
+    'aqsh': 'washington d.c.',
+    'russia': 'moscow',
+    'tajikistan': 'dushanbe',
+    "Kyrgyzstan": 'Bishkek',
+    'kazog \' iston ':' nursulton ',
+    'malaysia': 'kuala-lumpur',
+    'singapur': 'sungapur',
+    'italia': 'rim'}
+# if user in countries.keys():
 #     if user=="aqsh":
-#         print(f"{user.upper()}ning poytaxti {davlatlar[user].title()}")
+#         print(f"{user.upper()}ning poytaxti {countries[user].title()}")
 #     else:
-#         print(f"{user.upper()}ning poytaxti {davlatlar[user].title()}")
+#         print(f"{user.upper()}ning poytaxti {countries[user].title()}")
 # else:
 #     print(f"sorry, we dont have info about {user.title()} country")
         
     
-country = input('Qaysi davlatning poytaxtini bilishni istaysiz?:').lower()
-capital = davlatlar.get(country)
-if capital==None:
-    print('Kechirasiz, bizda bu haqida ma\'lumot yo\'q')    
+country = input ("Which country's capital do you want to know?:").lower ()
+capital = countries.get (country)
+if capital == None:
+    print ('Sorry, we have no information about this')
 else:
-    print(f"{country.upper()}ning poytaxti {capital.title()} shahri")
+    print (f"{capital.title ()} is the capital of {country.upper ()}")

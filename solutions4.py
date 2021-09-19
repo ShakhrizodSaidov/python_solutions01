@@ -1,45 +1,26 @@
-"""
-8/11/2020
+street = "Gardener"
+neighborhood = "Sogbon"
+district = "Bodomzor"
+region = "Samarkand"
 
-Dasturlash asoslari
+print (street + "street," + neighborhood + "neighborhood," + \
+      district + "district," + region + "region")
 
-#05-dars: STRING (MATN)
+print ("Please enter the following information:")
+street = input ("Street:")
+neighborhood = input ("Your neighborhood:")
+district = input ("Your district:")
+region = input ("Your region:")
+print (street + "street," + neighborhood + "neighborhood," + \
+      district + "district," + region + "region")
 
-Muallif: Anvar Narzullaev
+print (street + "street, \ n" + neighborhood + "neighborhood, \ n" + \
+      district + "district, \ n" + region + "region")
 
-Web sahifa: https://python.sariq.dev
-"""
+address = f"{street} street, {neighborhood} neighborhood, {district} district, {region} region"
+print (address)
 
-kocha = "Bog'bon"
-mahalla = "Sog'bon"
-tuman = "Bodomzor"
-viloyat = "Samarqand"
-
-# Yuqoridagi o'zgaruvchilarni jamlab, quyidagi ko'rinishda konsolga chiqaring:
-# Diqqat uzun kodlarni \ belgisi yordamida keyingi qatorga
-# ko'chirish mumkin
-print(kocha + " ko'chasi, " + mahalla + " mahallasi, " + \
-      tuman + " tumani, " + viloyat + " viloyati")
-
-#Yuqoridagi o'zgaruvchilarning qiymatini foydalanuvchidan so'rang.
-print("Iltimos, quyidagi ma'lumotlarni kiriting:")
-kocha = input("Ko'changiz: ")
-mahalla = input("Mahallangiz: ")
-tuman = input("Tumaningiz: ")
-viloyat = input("Viloyatingiz: ")
-print(kocha + " ko'chasi, " + mahalla + " mahallasi, " + \
-      tuman + " tumani, " + viloyat + " viloyati")   
-
-# Yuqoridagi matnni konsolga chiqarishda har bir verguldan keyin yangi qatorga yozing
-print(kocha + " ko'chasi,\n" + mahalla + " mahallasi,\n" + \
-      tuman + " tumani,\n" + viloyat + " viloyati")
-
-# Yuqoridagi o'zgaruvchilarni f-string yordamida, yangi manzil deb nomlangan o'zgaruvchiga yuklang
-manzil = f"{kocha} ko'chasi, {mahalla} mahallasi, {tuman} tumani, {viloyat} viloyati"
-print(manzil)
-
-#manzil ga biz yuqorida o'rgangan metodlarni qo'llab ko'ring.
-print(manzil.upper())
-print(manzil.lower())
-print(manzil.title())
-print(manzil.capitalize())
+print (address.upper ())
+print (address.lower ())
+print (address.title ())
+print (address.capitalize ())
