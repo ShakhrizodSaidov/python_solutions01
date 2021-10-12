@@ -14,3 +14,16 @@ if set(books)=={''}:
 else:
     print(f"List of your books is {set(books)}")
 print("Operation was ended")
+##############
+books=[]
+flag=True
+while flag:
+    book=input("Enter a book(to quit type 'quit'):")
+    if book=='quit':
+        print('operation is ended..')
+        flag=False
+    else:
+        books.append(book)
+        print(f"Your books:{set(books)}" )
+print(f'entered books: {set(books)}')
+##############
