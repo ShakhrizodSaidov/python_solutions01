@@ -6,4 +6,6 @@ python_words = {
     'if':'Shartlarni tekshirish operatori'}
 for item in sorted(python_words):
     print(f"{item.capitalize()}-{python_words[item]}")
-    
+#for keys,values in sorted(python_words.items()):
+#    print(f"{keys.title()}-{values.capitalize()}")
+   
